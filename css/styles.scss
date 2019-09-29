@@ -1,0 +1,63 @@
+$primary-color: #175466;
+$image-url: url('../assets/header-image.jpg');
+body {
+    font-family: sans-serif;
+}
+
+.bg-image {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.header-container {
+    @extend .bg-image;
+    height: 350px;
+    background-image: $image-url;
+    .header-badge {
+        background-color: $primary-color;
+        .badge-text {
+            letter-spacing: 1px;
+        }
+    }
+    .title-container {
+        opacity: 0.8;
+        background-color: #ffffff;
+    }
+}
+
+.section-container {
+    .description {
+        letter-spacing: 1.25px;
+    }
+    i {
+        font-size: large;
+    }
+    .body-image {
+        height: 329px;
+    }
+    .register-card {
+        background-color: rgba(23, 84, 102, 0.08);
+        color: $primary-color;
+        .register-divider {
+            height: 2px;
+            width: 50px
+        }
+        .register-btn {
+            background-color: $primary-color;
+            font-size: 15px;
+            letter-spacing: .8px;
+        }
+    }
+    .article-container {
+        .thumbnail {
+            height: 150px;
+        }
+        .description {
+            letter-spacing: 0.8px;
+            color: #333333;
+        }
+    }
+}
